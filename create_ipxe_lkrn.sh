@@ -10,7 +10,7 @@ while true; do
 	if [ "$RUNNING" == "false" ]; then
 	  docker cp $(cat ipxe-containerid):/home/ipxe/src/bin/ipxe.lkrn .
 	  docker cp $(cat ipxe-containerid):/home/ipxe/src/bin/undionly.kpxe . 
-	  exit 0
+	  break
 	fi
 done
 
