@@ -6,8 +6,11 @@ This docker container is for the building of iPXE specifically for [Hanlon](http
 ## Build Image
 
 Clone the repo.
+
 `git clone https://github.com/jcpowermac/ipxe-build.git`
+
 Create a local docker image.
+
 `docker build -t jcpowermac/ipxe-build .`
 
 ## Build iPXE and extract required files
