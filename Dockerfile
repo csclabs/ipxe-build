@@ -4,7 +4,7 @@ MAINTAINER Joseph Callen <jcpowermac@gmail.com>
 
 
 RUN apt-get -y update \
-    && apt-get -y install git make build-essential wget genisoimage mkisofs \
+    && apt-get -y install git make build-essential wget genisoimage mkisofs liblzma-dev \
     && apt-get autoremove \
     && apt-get clean \
     && rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*

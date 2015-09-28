@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run -d --cidfile="ipxe-containerid" --name ipxe-build jcpowermac/ipxe-build
+docker run -it --cidfile="ipxe-containerid" --name ipxe-build ipxe-build
 
 RUNNING=$(docker inspect --format="{{ .State.Running }}" $(cat ipxe-containerid))
 
